@@ -1,0 +1,43 @@
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 2px solid #D3D3D3;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.wrap{
+  width: 30%;
+  position: absolute;	
+  top: 2%;
+  left: 65%;
+  
+}
+</style>
+
+<div class="wrap">
+   <div class="search">
+	<form action="/view-form" method="post">
+	<input type="text" class="searchTerm" name="form_id" placeholder="Enter Form ID">
+	</form>
+   </div>
+</div>

@@ -1,0 +1,112 @@
+<% include menu%>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+table{
+    border: 1px solid #000000;
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+}
+</style>
+<div class="container">
+<div class="pb-2 mt-4 mb-2 text-center">
+<h2>Form ID : <%= form_id%></h2>
+</div>          
+  <table class="table table-borderless col-sm-8">
+    <tbody>
+      <tr>
+        <td>Date</td>
+        <td><%= date%></td>
+      </tr>
+      <tr>
+        <td>Vessel Name</td>
+        <td><%= vessel%></td>
+      </tr>
+      <tr>
+        <td>Group</td>
+        <td><%= group%></td>
+      </tr>
+      <tr>
+        <td>Type</td>
+        <td><%= type%></td>
+      </tr>
+      <tr>
+        <td>Country</td>
+        <td><%= country%></td>
+      </tr>
+      <tr>
+        <td>Port</td>
+        <td><%= port%></td>
+      </tr>
+      <tr>
+        <td>Inspector for Oil Major</td>
+        <td><%= insp%></td>
+      </tr>
+      <tr>
+        <td>Name of Company Inspector</td>
+        <td><%= company_insp%></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="font-weight-bold">Inspector</td>
+      </tr>
+      <tr>
+        <td>First Name</td>
+        <td><%= insp_fn%></td>
+      </tr>
+      <tr>
+      <td>Last Name</td>
+      <td><%= insp_ln%></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="font-weight-bold">Master</td>
+      </tr>
+      <tr>
+        <td>First Name</td>
+        <td><%= master_fn%></td>
+      </tr>
+      <tr>
+      <td>Last Name</td>
+      <td><%= master_ln%></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="font-weight-bold">Chief Engineer</td>
+      </tr>
+      <tr>
+        <td>First Name</td>
+        <td><%= cheng_fn%></td>
+      </tr>
+      <tr>
+      <td>Last Name</td>
+      <td><%= cheng_ln%></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="font-weight-bold">Cheif Officer</td>
+      </tr>
+      <tr>
+        <td>First Name</td>
+        <td><%= choff_fn%></td>
+      </tr>
+      <tr>
+      <td>Last Name</td>
+      <td><%= choff_ln%></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="font-weight-bold">AE</td>
+      </tr>
+      <tr>
+        <td>First Name</td>
+        <td><%= ae_fn%></td>
+      </tr>
+      <tr>
+      <td>Last Name</td>
+      <td><%= ae_ln%></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="/edit/<%= form_id%>"><button type="submit" class="btn btn-primary">Edit</button></a>
+    
+</div>

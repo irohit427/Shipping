@@ -1,0 +1,11 @@
+{
+  "name": "Shopping",
+  "version": "0.0.0",
+  "description": "Shopping Form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nandini Rai",
+  "license": "ISC"
+}
